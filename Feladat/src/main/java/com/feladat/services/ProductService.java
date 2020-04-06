@@ -22,4 +22,11 @@ public class ProductService {
                 .collect(Collectors.toList());
         return available;
     }
+
+    public List<Product> getAllNike() {
+        List<Product> allNike = items.getProductList().stream()
+                .filter(nike -> nike.getDescription().toLowerCase().contains("nike"))
+                .collect(Collectors.toList());
+        return allNike;
+    }
 }

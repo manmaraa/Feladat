@@ -16,10 +16,11 @@ import com.feladat.services.ProductService;
 public class AvailableController {
 	@Autowired
 	private ProductService productService;
+
 	@GetMapping("/")
-public String getAllProduct(Model model) {
+	public String getAllProduct(Model model) {
 	
-	model.addAttribute("products",productService.onlyAvailable());
+		model.addAttribute("products",productService.onlyAvailable());
 	return "products_all";
 }
 }

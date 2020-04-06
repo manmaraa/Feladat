@@ -20,6 +20,6 @@ public class AvailableController {
 public String getAllProduct(Model model) {
 	
 	model.addAttribute("products",productService.onlyAvailable());
-	return"only_available";
+	return "products_all";
 }
 }

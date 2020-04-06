@@ -20,8 +20,8 @@ public class NikeController {
 
 	@GetMapping("/")
 	public String getAllProduct(Model model) {
-	
-		model.addAttribute("products",productService.getAllNike());
-	return "only_available";
+
+		model.addAttribute("products", productService.getAllNike());
+		return "products_all";
 	}
 }

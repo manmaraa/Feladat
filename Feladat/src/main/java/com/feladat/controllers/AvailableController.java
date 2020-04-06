@@ -19,7 +19,7 @@ public class AvailableController {
 	@GetMapping("/")
 public String getAllProduct(Model model) {
 	
-	model.addAttribute("products",productService.getAllProducts());
+	model.addAttribute("products",productService.onlyAvailable());
 	return"only_available";
 }
 }

@@ -15,7 +15,7 @@ public class ProductList {
         listOfProducts.add(new Product("Printer", "some HP printer that wil print pages", "3000.0 Kc", 2));
     }
 
-    public List<Product> getAllProducts() {
+    public List<Product> getProductList() {
         return listOfProducts;
     }
 }

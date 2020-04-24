@@ -14,13 +14,16 @@ import com.feladat.models.Product;
 
 @Service
 public class ProductService {
+
     ProductList items = new ProductList();
+
     public List<Product> onlyAvailable(){
         List<Product> available = items.getProductList().stream()
                 .filter(quantity->quantity.getQuantity()>0)
                 .collect(Collectors.toList());
         return available;
     }
+
     public List<Product> getProducts() {
         List<Product> Products = items.getProductList();
         return Products;

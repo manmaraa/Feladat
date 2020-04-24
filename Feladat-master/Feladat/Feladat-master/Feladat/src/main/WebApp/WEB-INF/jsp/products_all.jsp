@@ -45,8 +45,9 @@ border:4px solid white;
 </head>
 <body>
 <br>
-<form method="post" action="search">
-<input type="text" class="form-control" name="search" placeholder="Search here..."/>
+<form method="POST" action="/search">
+    <input type="text" name = "key" placeholder="Search here..."/>
+    <input type="submit" value="Search" name = "search">
 </form>
 
 <table>

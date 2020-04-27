@@ -1,8 +1,6 @@
 <%@ include file="header.jsp"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
-<style>
-
+ <style>
     *{
 
         padding:0;
@@ -38,26 +36,21 @@
     .name{width:20%;}
     .Description{width:40%;}
     .Stock{width:20%;}
-    .Price{20%}
+    .Price{width:20%}
     td{padding:2px;
     }
-</style>
-
+ </style>
 </head>
 <body>
-<form action="" method="get">
-    <input type="text" class="form-control" name="search" placeholder="Search here..."/>
-</form>
-
-<table>
-    <tr>
-        <th class="name">Name</th>
-        <th class="Description">Description</th>
-        <th class="Price">Price</th>
-        <th class="Stock">Quantity of Stock</th>
-    </tr>
-    <div class="tablaadatok">
-
+ <br>
+    <table>
+        <tr>
+            <th class="name">Name</th>
+            <th class="Description">Description</th>
+            <th class="Price">Price</th>
+            <th class="Stock">Quantity of Stock</th>
+        </tr>
+        <div class="tablaadatok">
             <tr>
                 <c:forEach items="${products}" var="product">
                 <td class="name" >${product.name}</td>
@@ -66,9 +59,7 @@
                 <td class="Stock">${product.quantity}</td>
                 </c:forEach>
             </tr>
-
-    </div>
-</table>
-
+        </div>
+    </table>
 </body>
 </html>

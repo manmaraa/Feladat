@@ -14,12 +14,14 @@ import com.feladat.services.ProductService;
 @Controller
 @RequestMapping("/Nike")
 public class NikeController {
+
 	@Autowired
 	private ProductService productService;
+
 	@GetMapping("/")
-public String getAllProduct(Model model) {
-	
-	model.addAttribute("products",productService.getAllProducts());
-	return"nike";
-}
+	public String getAllProduct(Model model) {
+
+		model.addAttribute("products", productService.getAllNike());
+		return "products_all";
+	}
 }

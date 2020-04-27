@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Feladat:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Feladat</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Feladat-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Feladat:war exploded" />
+    </root>
+  </artifact>
+</component>
